@@ -1,0 +1,154 @@
+.learning-progress-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #fff 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  font-size: 1rem;
+  color: #595959;
+  margin-bottom: 1.5rem;
+}
+
+.progress-stats .ant-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-item span {
+  font-size: 0.85rem;
+  color: #595959;
+}
+
+.add-update-btn {
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  background: linear-gradient(to right, #f09433, #e6683c, #dc2743);
+  border: none;
+  box-shadow: 0 4px 12px rgba(240, 148, 51, 0.3);
+}
+
+.progress-tabs {
+  margin: 2rem 0;
+}
+
+.progress-tabs .ant-btn {
+  border-radius: 8px !important;
+  font-weight: 500;
+}
+
+.progress-content .ant-timeline {
+  padding: 1rem;
+}
+
+.progress-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #8c8c8c;
+}
+
+.progress-modal .ant-modal-content {
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.progress-modal .ant-modal-header {
+  border-radius: 16px 16px 0 0;
+}
+
+.progress-modal .ant-input,
+.progress-modal .ant-select-selector,
+.progress-modal .ant-input-textarea {
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.progress-modal .ant-btn {
+  border-radius: 8px;
+  padding: 0 24px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .progress-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .progress-stats .ant-space {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .progress-stats .ant-divider {
+    display: none;
+  }
+  
+  .progress-tabs .ant-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .progress-tabs .ant-btn {
+    margin-bottom: 8px;
+  }
+}
